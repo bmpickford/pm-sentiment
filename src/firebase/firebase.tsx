@@ -16,6 +16,10 @@ const firebaseConfig = {
     measurementId: process.env.MEASUREMENT_ID,
 };
 
+console.log(process.env.PROJECT_ID)
+console.log(firebaseConfig)
+console.log(process.env.NODE_ENV)
+
 export const FirebaseProvider = ({ children }: any) => {  
     if (!firebase.apps.length) {
         firebase.initializeApp(firebaseConfig);
