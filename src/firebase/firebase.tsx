@@ -15,9 +15,7 @@ const firebaseConfig = {
     appId: process.env.REACT_APP_APP_ID,
     measurementId: process.env.REACT_APP_MEASUREMENT_ID,
 };
-
 console.log(firebaseConfig)
-console.log(process.env.NODE_ENV)
 
 export const FirebaseProvider = ({ children }: any) => {  
     if (!firebase.apps.length) {
