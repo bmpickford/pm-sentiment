@@ -70,9 +70,6 @@ export const CustomizedTimeline = ({ data, events }: TimelineProps) => {
   return (
     <Timeline align="alternate">
       {eventsAndData.map((item: PMData | Events, i: number) => {
-        // if ( {
-        //   return
-        // }
         return (
           <TimelineItem key={i}>
             <TimelineOppositeContent className={classes.dateText}>

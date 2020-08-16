@@ -39,6 +39,7 @@ export const Sentiment = () => {
             setSentiments(data!.items.filter((item: PMData) => item.name && item.name.includes('speech')))
 
         }).catch((err) => console.error(err));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     if (!isLoaded) {
